@@ -1,5 +1,5 @@
 package com.algo.graph;
 
-public class GraphMatrice {
+public class GraphMatrice<T extends Number> {
 
 }
