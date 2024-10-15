@@ -11,13 +11,12 @@ public class NodeWeight<T,M> extends Node<T> {
 	}
 	
 	@Override
-	public String toString() throws Exception {
+	public String toString() {
 		Node next=getNext();
 		T val=getVal();
 		if(next instanceof NodeWeight) 
 			return "->"+val+weight+next; // bien verifie que next est de type 
-		else 
-			throw new Exception("Le GraphList ne peut pas être avec des NodeWeight et Node!");
+		return null;
 	}
 
 }
